@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vice Ledger — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="paper">
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-mark">VL</div>
+    <div>
+      <h1>Vice Ledger</h1>
+      <p class="subtitle">Grand Theft Auto VI — Trophy Guide &amp; Tracker · PlayStation 5 · Offline</p>
+    </div>
+  </div>
+  <div class="top-controls">
+    <button id="themeBtn" type="button" aria-label="Toggle theme">Night theme</button>
+    <button id="spoilerBtn" type="button" aria-pressed="false">Spoiler-safe: OFF</button>
+  </div>
+</header>
+
+<div class="audit-strip" id="auditStrip" role="status"></div>
+
+<div class="progress-wrap">
+  <div class="progress-line">
+    <strong id="progressText">0 / 55 trophies earned</strong>
+    <span id="progressPct">0% to platinum</span>
+    <span id="nextUp">Next up: —</span>
+  </div>
+  <div class="progress-bar" aria-hidden="true"><div id="progressFill"></div></div>
+  <div class="progress-actions">
+    <button id="exportBtn" type="button">Export progress (JSON)</button>
+    <button id="importBtn" type="button">Import progress</button>
+    <input id="importFile" type="file" accept="application/json" hidden>
+    <button id="resetBtn" type="button">Reset progress</button>
+  </div>
+</div>
+
+<nav class="tabs" aria-label="Views">
+  <button type="button" data-tab="checklist" class="active">Checklist</button>
+  <button type="button" data-tab="roadmap">Roadmap</button>
+  <button type="button" data-tab="missables">Missables <span id="missCount"></span></button>
+  <button type="button" data-tab="sources">Sources &amp; Audit</button>
+</nav>
+
+<main id="view"></main>
+
+<footer class="foot">
+  <p>Vice Ledger — an offline guide in our own words. Trophy names and descriptions are shown as PlayStation publishes them; every guide step cites its sources. No Rockstar logo or artwork. List 2026-11-18 · Guide updated 2026-11-21.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
